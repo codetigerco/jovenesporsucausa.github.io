@@ -1,0 +1,291 @@
+////////////////////////////////
+		//Variables//
+////////////////////////////////
+
+// Colors
+
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #f8f8f8;
+$color-primary: #999999;
+$color-secondary: #CCC;
+
+// Fonts
+
+$font-body: 'Nunito Sans', sans-serif;
+
+// Breakpoints
+
+$xs: 480px;
+$sm: 768px;
+$md: 960px;
+$lg: 1220px;
+
+// font-sizes
+$font-normal: 16px;
+
+////////////////////////////////
+		//General//
+////////////////////////////////
+
+html {
+	font: normal $font-normal $font-body;
+	line-height: 1.8;
+}
+
+body {
+	color: $color-black;
+	line-height: 1.4;
+	font-family: $font-body;
+  font-weight: 300;
+}
+
+////////////////////////////////
+		//Hero//
+////////////////////////////////
+header {
+  &.tm-background {
+    background: $color-gray;
+  }
+
+  .tm-cover-image {
+    filter: grayscale(100%);
+  }
+
+  .tm-brand img {
+    height: 50px;
+  }
+
+  ul li a {
+    height: 30 !important;
+    border-width: 3px !important;
+  }
+
+  ul li a.uk-button {
+    line-height: 1.4;
+  }
+
+  .tm-purchase-button:hover {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    color: $color-white !important;
+  }
+
+  .tm-hero-content {
+    position: absolute;
+    bottom: 60px;
+  }
+
+  .tm-conference-name {
+    text-transform: uppercase;
+  }
+
+  .tm-navbar {
+    background-color: transparent !important;
+  }
+  .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
+    font-size: $font-normal;
+  }
+
+  .tm-subtitle {
+    font-size: $font-normal*1.4;
+  }
+}
+
+
+////////////////////////////////
+		// Utilities//
+////////////////////////////////
+
+.tm-title{
+  text-transform: uppercase;
+}
+
+.tm-align-medium-right {
+
+  order: -1;
+  @media (min-width: $sm){
+    text-align: right;
+    order: 1;
+  }
+}
+
+.tm-light {
+  background-color: $color-black;
+}
+
+.tm-button, .tm-button:hover {
+  background-color: $color-secondary;
+}
+
+.tm-fade-in-up {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.tm-explanation {
+  font-size: $font-normal*1.4;
+}
+.tm-container-margin {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.tm-container-padding {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.tm-speakers {
+  .tm-speaker-picture {
+    width: 100px;
+    height: auto;
+    img {
+      filter: grayscale(100%);
+    }
+  }
+
+  .tm-speaker-info{
+    text-align: left;
+    .tm-preacher-name {
+      font-size: $font-normal;
+      font-weight: 400;
+
+    }
+    p {
+      font-size: $font-normal*.9;
+    }
+  }
+}
+
+////////////////////////////////
+		//Schedule//
+////////////////////////////////
+.tm-schedule-container {
+
+  .tm-schedule {
+    color: $color-white;
+
+    .tm-schedule-header {
+      padding-bottom: 12px;
+      font-weight: 300;
+      font-size: $font-normal*1.6;
+      border-bottom: $color-white 1px solid;
+    }
+
+    .tm-schedule-red{
+      color: $color-secondary;
+    }
+
+    .tm-grid {
+      margin-left: 0;
+    }
+
+    .tm-session {
+      padding-bottom: 12px;
+      border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
+      font-size: $font-normal*1.2;
+
+      &>div.uk-flex{
+        flex-direction: column;
+
+        @media (min-width: $sm){
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width: $sm){
+        .tm-session-detail{
+          margin-left:  60px;
+        }
+      }
+
+      .tm-session-time, .tm-session-title {
+        font-weight: bold;
+      }
+
+      .tm-session-content {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+.tm-location-map {
+  position: relative;
+  padding-bottom: 500px; // This is the aspect ratio
+  margin-bottom: 100px;
+  height: 0;
+  overflow: hidden;
+
+  .tm-map-overlay {
+    background: transparent;
+    position:absolute;
+    z-index:1;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+	  -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+	  -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+  }
+
+}
+
+////////////////////////////////
+		//Contact Channels//
+////////////////////////////////
+
+.tm-contact-info {
+
+  .tm-address {
+    font-size: $font-normal*2.4;
+    line-height: 1.8;
+
+    .tm-button-route {
+      position: relative;
+      bottom: 30px;
+      color: $color-white;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+
+  .tm-contact-channel {
+    font-size: $font-normal*1.4;
+    color: $color-primary;
+  }
+
+  .tm-contact {
+    font-size: $font-normal*1.8;
+  }
+
+}
+
+////////////////////////////////
+		//Footer//
+////////////////////////////////
+
+footer {
+  .tm-pre-footer {
+      border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
+  }
+
+  .tm-signature {
+    margin-top: 0px;
+  }
+
+  .tm-codetiger-link, .tm-codetiger-link:hover, .tm-codetiger-link:visited {
+    color: #D9790A;
+  }
+}
