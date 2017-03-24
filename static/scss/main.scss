@@ -24,6 +24,11 @@ $lg: 1220px;
 // font-sizes
 $font-normal: 16px;
 
+// font-weigths
+$light: 300;
+$normal: 400;
+$bold: 700;
+
 ////////////////////////////////
 		//General//
 ////////////////////////////////
@@ -49,7 +54,6 @@ header {
   }
 
   .tm-cover-image {
-    filter: grayscale(100%);
   }
 
   .tm-brand img {
@@ -72,18 +76,14 @@ header {
   }
 
   .tm-hero-content {
+    display: none;
+    bottom: 30px;
+    color: $color-white;
     position: absolute;
-    bottom: 60px;
   }
 
-  .tm-conference-name {
-    text-transform: uppercase;
-  }
-
-  .tm-navbar {
-    background-color: transparent !important;
-  }
   .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
+    color: $color-white;
     font-size: $font-normal;
   }
 
@@ -101,6 +101,10 @@ header {
   text-transform: uppercase;
 }
 
+.tm-bold {
+  font-weight: $bold !important;
+}
+
 .tm-align-medium-right {
 
   order: -1;
@@ -114,8 +118,12 @@ header {
   background-color: $color-black;
 }
 
+.tm-verse {
+  color: #4CAF4F;
+}
+
 .tm-button, .tm-button:hover {
-  background-color: $color-secondary;
+  background-color: $color-black;
 }
 
 .tm-fade-in-up {
@@ -141,7 +149,7 @@ header {
     width: 100px;
     height: auto;
     img {
-      filter: grayscale(100%);
+      /**filter: grayscale(100%);**/
     }
   }
 
@@ -156,6 +164,10 @@ header {
       font-size: $font-normal*.9;
     }
   }
+}
+
+.tm-uppercase {
+  text-transform: uppercase;
 }
 
 ////////////////////////////////
@@ -173,10 +185,20 @@ header {
       border-bottom: $color-white 1px solid;
     }
 
-    .tm-schedule-red{
-      color: $color-secondary;
+    .tm-schedule-blue {
+      color: #00BCD4;
+      border-bottom: 1px solid #00BCD4;
     }
 
+    .tm-schedule-red {
+      color: #F54236;
+      border-bottom: 1px solid #F54236;
+    }
+
+    .tm-schedule-green {
+      color: #4CAF4F;
+      border-bottom: 1px solid #4CAF4F;
+    }
     .tm-grid {
       margin-left: 0;
     }

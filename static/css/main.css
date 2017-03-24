@@ -11,9 +11,6 @@ body {
 header.tm-background {
   background: #f8f8f8; }
 
-header .tm-cover-image {
-  filter: grayscale(100%); }
-
 header .tm-brand img {
   height: 50px; }
 
@@ -30,16 +27,13 @@ header .tm-purchase-button:hover {
   color: #fff !important; }
 
 header .tm-hero-content {
-  position: absolute;
-  bottom: 60px; }
-
-header .tm-conference-name {
-  text-transform: uppercase; }
-
-header .tm-navbar {
-  background-color: transparent !important; }
+  display: none;
+  bottom: 30px;
+  color: #fff;
+  position: absolute; }
 
 header .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
+  color: #fff;
   font-size: 16px; }
 
 header .tm-subtitle {
@@ -47,6 +41,9 @@ header .tm-subtitle {
 
 .tm-title {
   text-transform: uppercase; }
+
+.tm-bold {
+  font-weight: 700 !important; }
 
 .tm-align-medium-right {
   -ms-flex-order: -1;
@@ -60,8 +57,11 @@ header .tm-subtitle {
 .tm-light {
   background-color: #000; }
 
+.tm-verse {
+  color: #4CAF4F; }
+
 .tm-button, .tm-button:hover {
-  background-color: #CCC; }
+  background-color: #000; }
 
 .tm-fade-in-up {
   animation-name: fadeInUp; }
@@ -81,7 +81,7 @@ header .tm-subtitle {
   width: 100px;
   height: auto; }
   .tm-speakers .tm-speaker-picture img {
-    filter: grayscale(100%); }
+    /**filter: grayscale(100%);**/ }
 
 .tm-speakers .tm-speaker-info {
   text-align: left; }
@@ -91,6 +91,9 @@ header .tm-subtitle {
   .tm-speakers .tm-speaker-info p {
     font-size: 14.4px; }
 
+.tm-uppercase {
+  text-transform: uppercase; }
+
 .tm-schedule-container .tm-schedule {
   color: #fff; }
   .tm-schedule-container .tm-schedule .tm-schedule-header {
@@ -98,8 +101,15 @@ header .tm-subtitle {
     font-weight: 300;
     font-size: 25.6px;
     border-bottom: #fff 1px solid; }
+  .tm-schedule-container .tm-schedule .tm-schedule-blue {
+    color: #00BCD4;
+    border-bottom: 1px solid #00BCD4; }
   .tm-schedule-container .tm-schedule .tm-schedule-red {
-    color: #CCC; }
+    color: #F54236;
+    border-bottom: 1px solid #F54236; }
+  .tm-schedule-container .tm-schedule .tm-schedule-green {
+    color: #4CAF4F;
+    border-bottom: 1px solid #4CAF4F; }
   .tm-schedule-container .tm-schedule .tm-grid {
     margin-left: 0; }
   .tm-schedule-container .tm-schedule .tm-session {
