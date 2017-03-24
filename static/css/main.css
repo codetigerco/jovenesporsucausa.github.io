@@ -49,7 +49,8 @@ header .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
   font-size: 16px; }
 
 header .tm-subtitle {
-  font-size: 22.4px; }
+  font-size: 22.4px;
+  font-family: "Montserrat", sans-serif;}
 
 .tm-title {
   text-transform: uppercase; }
