@@ -103,7 +103,8 @@ header .tm-subtitle {
   text-align: left; }
   .tm-speakers .tm-speaker-info .tm-preacher-name {
     font-size: 16px;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;}
   .tm-speakers .tm-speaker-info p {
     font-size: 14.4px; }
 
