@@ -53,14 +53,19 @@ header {
     background: $color-black;
     width: 100%;
     height: 420px;
-    @media (min-width: $sm) {
+
+    @media (min-width: $xs) and (max-width: $md) {
+      width: 100%;
+      height: 500px;
+      .tm-cover-image {
+      }
+    }
+
+    @media (min-width: $md) {
       box-sizing: border-box;
       min-height: 100vh;
       height: 100vh;
     }
-  }
-
-  .tm-cover-image {
   }
 
   .tm-brand img {
