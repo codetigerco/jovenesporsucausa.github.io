@@ -9,7 +9,14 @@ body {
   font-weight: 300; }
 
 header.tm-background {
-  background: #f8f8f8; }
+  background: #000;
+  width: 100%;
+  height: 420px; }
+  @media (min-width: 768px) {
+    header.tm-background {
+      box-sizing: border-box;
+      min-height: 100vh;
+      height: 100vh; } }
 
 header .tm-brand img {
   height: 50px; }
@@ -27,10 +34,11 @@ header .tm-purchase-button:hover {
   color: #fff !important; }
 
 header .tm-hero-content {
-  display: none;
   bottom: 30px;
   color: #fff;
   position: absolute; }
+  header .tm-hero-content .tm-conference-name {
+    color: #fff; }
 
 header .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
   color: #fff;
@@ -70,8 +78,12 @@ header .tm-subtitle {
   font-size: 22.4px; }
 
 .tm-container-margin {
-  margin-top: 130px;
-  margin-bottom: 130px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  @media (min-width: 960px) {
+    .tm-container-margin {
+      margin-top: 130px;
+      margin-bottom: 130px; } }
 
 .tm-container-padding {
   padding-top: 130px;
