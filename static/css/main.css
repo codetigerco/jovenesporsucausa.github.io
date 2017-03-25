@@ -6,11 +6,7 @@ body {
   color: #000;
   line-height: 1.4;
   font-family: "Montserrat", sans-serif;
-<<<<<<< HEAD
   font-weight: 300; }
-=======
-  font-weight: 200; }
->>>>>>> ef11878424f68da478a122a41283f6512fac3cc2
 
 header.tm-background {
   background: #000;
@@ -48,13 +44,15 @@ header .tm-hero-content {
   header .tm-hero-content .tm-conference-name {
     color: #fff; }
 
+header .tm-hero-logo {
+  z-index: 10; }
+
 header .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
   color: #fff;
   font-size: 16px; }
 
 header .tm-subtitle {
-  font-size: 22.4px;
-  font-family: "Montserrat", sans-serif;}
+  font-size: 22.4px; }
 
 .tm-title {
   text-transform: uppercase; }
@@ -108,8 +106,7 @@ header .tm-subtitle {
   text-align: left; }
   .tm-speakers .tm-speaker-info .tm-preacher-name {
     font-size: 16px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;}
+    font-weight: 400; }
   .tm-speakers .tm-speaker-info p {
     font-size: 14.4px; }
 

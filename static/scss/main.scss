@@ -97,6 +97,10 @@ header {
     }
   }
 
+	.tm-hero-logo {
+		z-index: 10;
+	}
+
   .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
     color: $color-white;
     font-size: $font-normal;
