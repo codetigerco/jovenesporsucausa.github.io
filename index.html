@@ -19,11 +19,11 @@
           <div class="uk-width-3-5 uk-visible@l uk-navbar-container uk-navbar-transparent tm-navbar" uk-navbar>
             <div class="uk-navbar-center">
               <ul class="uk-navbar-nav">
-                <li><a href="#">Conferencia</a></li>
-                <li><a href="#">Conferencistas</a></li>
-                <li><a href="#">Lugar</a></li>
-                <li><a href="#">Programa</a></li>
-                <li><a href="#" class="uk-button uk-button-default tm-purchase-button">Comprar boleta</a></li>
+                <li><a href="#conference" uk-scroll>Conferencia</a></li>
+                <li><a href="#speakers" uk-scroll>Conferencistas</a></li>
+                <li><a href="#program" uk-scroll>Programa</a></li>
+                <li><a href="#location" uk-scroll>Lugar</a></li>
+                <li><a href="#tickets" class="uk-button uk-button-default tm-purchase-button" uk-scroll>Comprar boleta</a></li>
               </ul>
             </div>
           </div>
@@ -42,7 +42,7 @@
       </nav>
 
     </header>
-    <div class="uk-container tm-container-margin">
+    <div id="conference" class="uk-container tm-container-margin">
 
       <div class="tm-about">
         <h1 class="tm-title tm-bold">De la vergüenza a la gloria
@@ -51,8 +51,8 @@
         Antes de venir a Cristo nos encontrábamos perdidos en nuestros delitos y pecados, alejados de Dios y de su gracia. Pero Dios en su infinito amor envió a su hijo Jesús a morir, a través de su muerte y resurrección trasladarnos de la vergüenza a la Gloria. Esta conferencia busca mostrarnos la grandeza de este hecho.
         </p>
       </div>
-      
-      <div class="tm-speakers uk-margin-xlarge-top">
+
+      <div id="speakers" class="tm-speakers uk-margin-xlarge-top">
         <h2 class="tm-title">Conferencistas</h2>
         <p class="tm-explanation">
         </p>
@@ -142,7 +142,7 @@
       </div>
     </div>
 
-    <div class="tm-container-padding uk-light tm-schedule-container tm-light">
+    <div id="program" class="tm-container-padding uk-light tm-schedule-container tm-light">
       <div class="uk-container">
         <h1 class="tm-title">Programa de la conferencia</h1>
         <div class="tm-schedule uk-margin-large-top">
@@ -158,6 +158,8 @@
                     Bienvenida y Adoración
                   </div>
                 </div>
+              </div>
+            </div>
             <div class="tm-session uk-width-1-1">
               <div class="uk-flex">
                 <div class="tm-session-time">08:00 PM</div>
@@ -479,7 +481,7 @@
       </div><!-- schedule padded and centered container -->
     </div> <!-- schedule Container -->
 
-    <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+    <div id="tickets" class="uk-container uk-margin-large-top uk-margin-large-bottom">
         <h1 class="tm-title tm-bold">BOLETAS</h1>
         <p class="tm-explanation">
         Aquí puedes comprar tu boleta para la conferencia.
@@ -492,7 +494,7 @@
     </div><!-- tickets Container -->
 
 
-    <div class="tm-location-map">
+    <div id="location"  class="tm-location-map">
       <a class="tm-google-map" href="">
         <div class="tm-map-overlay" style="background:transparent; position:absolute; z-index:1; width:100%; height:100%; cursor:pointer;" onClick="style.pointerEvents='none'"></div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.0908656024976!2d-69.95285868476384!3d18.47954287524993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f71fa19bbb%3A0xfa8677c6082d8c0!2sIglesia+Bautista+Internacional!5e0!3m2!1sen!2sus!4v1488176008800" width="2900" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
