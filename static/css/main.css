@@ -44,8 +44,21 @@ header .tm-hero-content {
   header .tm-hero-content .tm-conference-name {
     color: #fff; }
 
-header .tm-hero-logo {
-  z-index: 10; }
+header .tm-logo-container {
+  width: 100%; }
+  header .tm-logo-container .tm-hero-logo {
+    position: relative;
+    z-index: 10;
+    width: 60%;
+    top: 400px; }
+    @media (min-width: 480px) and (max-width: 768px) {
+      header .tm-logo-container .tm-hero-logo {
+        width: 340px;
+        height: 105px;
+        top: 190px; } }
+    @media (max-width: 480px) {
+      header .tm-logo-container .tm-hero-logo {
+        top: 130px; } }
 
 header .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
   color: #fff;

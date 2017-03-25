@@ -97,8 +97,25 @@ header {
     }
   }
 
-	.tm-hero-logo {
-		z-index: 10;
+	.tm-logo-container {
+		width: 100%;
+
+		.tm-hero-logo {
+			position: relative;
+			z-index: 10;
+			width: 60%;
+			top: 400px;
+
+			@media (min-width: $xs) and (max-width: $sm) {
+				width: 340px;
+				height: 105px;
+				top: 190px;
+			}
+
+			@media (max-width: $xs) {
+				top: 130px;
+			}
+		}
 	}
 
   .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
@@ -110,6 +127,7 @@ header {
     font-size: $font-normal*1.4;
   }
 }
+
 
 
 ////////////////////////////////
