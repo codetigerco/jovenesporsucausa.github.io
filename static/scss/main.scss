@@ -89,12 +89,14 @@ header {
 
   .tm-hero-content {
     bottom: 30px;
+		width: 100%;
     color: $color-white;
     position: absolute;
 
-    .tm-conference-name {
-      color: $color-white;
-    }
+		@media (max-width: $sm) {
+			bottom: 15px;
+		}
+
   }
 
 	.tm-logo-container {
@@ -123,7 +125,16 @@ header {
   }
 
   .tm-subtitle {
-    font-size: $font-normal*1.4;
+    font-size: $font-normal*2.3;
+		margin-left: -11%;
+
+		@media (min-width: $xs) and (max-width: $md) {
+			font-size: $font-normal*1.4;
+		}
+
+		@media (max-width: $xs) {
+			font-size: $font-normal*.9;
+		}
   }
 }
 
@@ -137,8 +148,21 @@ header {
   text-transform: uppercase;
 }
 
+.tm-lighter {
+	font-weight: 200;
+}
+
+.tm-light {
+	font-weight: 300;
+}
+
+
 .tm-bold {
   font-weight: $bold !important;
+}
+
+.tm-black {
+	font-weight: 900;
 }
 
 .tm-align-medium-right {
@@ -150,7 +174,7 @@ header {
   }
 }
 
-.tm-light {
+.tm-light-background {
   background-color: $color-black;
 }
 
