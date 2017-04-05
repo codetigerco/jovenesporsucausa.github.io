@@ -59,7 +59,8 @@ header .tm-logo-container {
         top: 190px; } }
     @media (max-width: 480px) {
       header .tm-logo-container .tm-hero-logo {
-        top: 130px; } }
+        top: 110px;
+        width: 80%; } }
 
 header .tm-navbar > .uk-navbar-center > .uk-navbar-nav li a {
   color: #fff;
@@ -159,6 +160,9 @@ header .tm-subtitle {
   .tm-schedule-container .tm-schedule .tm-schedule-green {
     color: #4CAF4F;
     border-bottom: 1px solid #4CAF4F; }
+  .tm-schedule-container .tm-schedule .tm-schedule-yellow {
+    color: #fff500;
+    border-bottom: 1px solid #fff500; }
   .tm-schedule-container .tm-schedule .tm-grid {
     margin-left: 0; }
   .tm-schedule-container .tm-schedule .tm-session {
@@ -223,6 +227,13 @@ header .tm-subtitle {
 
 .tm-contact-info .tm-contact {
   font-size: 28.8px; }
+
+footer section {
+  padding-left: 20%;
+  padding-right: 20%; }
+
+footer figure img {
+  max-height: 90px; }
 
 footer .tm-pre-footer {
   border-bottom: rgba(255, 255, 255, 0.15) 1px solid; }

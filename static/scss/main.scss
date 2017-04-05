@@ -114,7 +114,8 @@ header {
 			}
 
 			@media (max-width: $xs) {
-				top: 130px;
+				top: 110px;
+        width: 80%;
 			}
 		}
 	}
@@ -370,6 +371,15 @@ header {
 ////////////////////////////////
 
 footer {
+
+  section {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  figure img {
+    max-height: 90px;
+  }
+
   .tm-pre-footer {
       border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
   }
