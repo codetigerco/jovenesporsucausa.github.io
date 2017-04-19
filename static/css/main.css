@@ -131,7 +131,7 @@ header .tm-subtitle {
   width: 100px;
   height: auto; }
   .tm-speakers .tm-speaker-picture img {
-    /**filter: grayscale(100%);**/ }
+    filter: grayscale(100%); }
 
 .tm-speakers .tm-speaker-info {
   text-align: left; }
