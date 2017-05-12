@@ -243,3 +243,7 @@ footer .tm-signature {
 
 footer .tm-codetiger-link, footer .tm-codetiger-link:hover, footer .tm-codetiger-link:visited {
   color: #D9790A; }
+
+footer .tm-supporters-logos {
+  margin: 20px auto;
+  width: 370px; }
